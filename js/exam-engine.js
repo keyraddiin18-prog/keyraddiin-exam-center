@@ -47,8 +47,8 @@ async function initializeExam() {
             throw new Error("INVALID_CODE");
         }
 
-        const examPath =
-            `./EXAM/${examCode}/exam.js`;
+const examPath =
+    `/EXAM/${examCode}/exam.js`;
 
         // Load exam JavaScript module
         const module = await import(
