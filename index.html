@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KEYRADDIIN EXAM CENTER</title>
+
+    <meta
+        name="description"
+        content="KEYRADDIIN EXAM CENTER - Online Examination Platform"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MAIN APP
+    ========================== -->
+    <main class="login-page">
+
+        <section class="login-card">
+
+            <!-- Logo / Brand -->
+            <div class="brand">
+
+                <div class="brand-logo">
+                    🎓
+                </div>
+
+                <h1>KEYRADDIIN</h1>
+
+                <p>EXAM CENTER</p>
+
+            </div>
+
+
+            <!-- Welcome -->
+            <div class="welcome">
+
+                <h2>Welcome</h2>
+
+                <p>
+                    Enter your information to start your examination.
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Grade -->
+                <div class="form-group">
+
+                    <label for="grade">
+                        Grade
+                    </label>
+
+                    <select
+                        id="grade"
+                        name="grade"
+                        required
+                    >
+
+                        <option value="" disabled selected>
+                            Select Grade
+                        </option>
+
+                        <option value="9">
+                            Grade 9
+                        </option>
+
+                        <option value="10">
+                            Grade 10
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Exam Code -->
+                <div class="form-group">
+
+                    <label for="examCode">
+                        Exam Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="examCode"
+                        name="examCode"
+                        placeholder="Enter exam code"
+                        autocomplete="off"
+                        autocapitalize="characters"
+                        spellcheck="false"
+                        required
+                    >
+
+                    <small>
+                        Enter the Exam Code provided by your teacher.
+                    </small>
+
+                </div>
+
+
+                <!-- Error Message -->
+                <div
+                    id="errorMessage"
+                    class="message error-message"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- Start Button -->
+                <button
+                    type="submit"
+                    id="startExamBtn"
+                    class="start-button"
+                >
+
+                    <span>START EXAM</span>
+
+                    <span class="button-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <!-- Security Notice -->
+            <div class="security-notice">
+
+                <span class="security-icon">
+                    🔒
+                </span>
+
+                <span>
+                    Please use the Exam Code provided by your teacher.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="page-footer">
+
+            <p>
+                © 2026 KEYRADDIIN EXAM CENTER
+            </p>
+
+            <p>
+                Online Examination Platform
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- App JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
