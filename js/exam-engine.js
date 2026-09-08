@@ -730,6 +730,8 @@ function autoSubmitExam() {
 
 function submitExam() {
 
+    console.log("SUBMIT BUTTON CONFIRMED");
+
     if (examSubmitted) {
         return;
     }

@@ -1,0 +1,859 @@
+/* ==========================================
+   KEYRADDIIN EXAM CENTER
+   PROFESSIONAL RESULT PAGE
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8fbff
+        );
+
+    color: #172033;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.result-header {
+    width: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b2a5b,
+            #1769aa
+        );
+
+    color: #ffffff;
+
+    padding:
+        18px
+        24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 4px 18px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.brand-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.15
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.brand-text h1 {
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.brand-text span {
+    display: block;
+
+    font-size: 11px;
+
+    opacity: 0.85;
+
+    letter-spacing: 2px;
+}
+
+
+.header-label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    opacity: 0.9;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.result-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding:
+        0 20px;
+
+    flex: 1;
+}
+
+
+/* ==========================================
+   RESULT CARD
+========================================== */
+
+.result-card {
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(
+            20,
+            50,
+            100,
+            0.12
+        );
+}
+
+
+.result-icon {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+
+.icon-circle {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #e7f8ef;
+
+    color: #16834b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    border: 5px solid #d3f1df;
+}
+
+
+.result-card > h2 {
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.result-subtitle {
+    text-align: center;
+
+    color: #65738b;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title {
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #1769aa;
+
+    letter-spacing: 1.3px;
+
+    margin-bottom: 15px;
+}
+
+
+.statistics-title {
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   INFORMATION CARDS
+========================================== */
+
+.information-card {
+    background: #f7faff;
+
+    border: 1px solid #e1eaf5;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.information-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 20px;
+}
+
+
+.information-item span,
+.exam-code span,
+.pass-mark-card span {
+    display: block;
+
+    font-size: 12px;
+
+    color: #78869a;
+
+    margin-bottom: 6px;
+}
+
+
+.information-item strong {
+    font-size: 16px;
+
+    color: #172033;
+}
+
+
+.exam-information h3 {
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+
+.exam-information p {
+    color: #65738b;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+.exam-code {
+    padding-top: 12px;
+
+    border-top:
+        1px solid #e1eaf5;
+}
+
+
+.exam-code strong {
+    font-size: 14px;
+
+    color: #1769aa;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   SCORE CARD
+========================================== */
+
+.score-card {
+    text-align: center;
+
+    margin-top: 25px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf5ff,
+            #f8fbff
+        );
+
+    border:
+        1px solid #dbe9f8;
+}
+
+
+.score-label {
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #66758a;
+
+    letter-spacing: 1.5px;
+}
+
+
+.score-display {
+    margin:
+        8px 0 10px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+.score-display strong {
+    font-size: 58px;
+
+    color: #0b2a5b;
+
+    line-height: 1;
+}
+
+
+.score-display span {
+    font-size: 22px;
+
+    color: #8290a3;
+}
+
+
+.status {
+    display: inline-block;
+
+    padding:
+        8px
+        20px;
+
+    border-radius: 50px;
+
+    background: #e7f8ef;
+
+    color: #16834b;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.percentage-display {
+    margin-top: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.percentage-display strong {
+    font-size: 25px;
+
+    color: #1769aa;
+}
+
+
+.percentage-display span {
+    font-size: 12px;
+
+    color: #78869a;
+}
+
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 12px;
+}
+
+
+.stat-card {
+    padding: 18px 12px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border:
+        1px solid #e3ebf5;
+
+    border-radius: 15px;
+}
+
+
+.stat-icon {
+    width: 35px;
+    height: 35px;
+
+    margin:
+        0 auto 10px;
+
+    border-radius: 10px;
+
+    background: #edf5ff;
+
+    color: #1769aa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+}
+
+
+.stat-label {
+    display: block;
+
+    font-size: 11px;
+
+    color: #78869a;
+
+    margin-bottom: 5px;
+}
+
+
+.stat-card strong {
+    font-size: 20px;
+
+    color: #172033;
+}
+
+
+/* ==========================================
+   PASS MARK
+========================================== */
+
+.pass-mark-card {
+    margin-top: 18px;
+
+    padding: 17px 20px;
+
+    border-radius: 14px;
+
+    background: #f7faff;
+
+    border:
+        1px solid #e1eaf5;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.pass-mark-card > div {
+    flex: 1;
+}
+
+
+.pass-mark-card strong {
+    font-size: 15px;
+
+    color: #1769aa;
+}
+
+
+/* ==========================================
+   TELEGRAM
+========================================== */
+
+.telegram-card {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    border-radius: 17px;
+
+    background: #f1f8ff;
+
+    border:
+        1px solid #d7eafa;
+
+    text-align: center;
+}
+
+
+.telegram-icon {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.telegram-content h3 {
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+
+.telegram-content p {
+    color: #68778c;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+.telegram-button {
+    width: 100%;
+
+    max-width: 430px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding:
+        14px
+        20px;
+
+    background: #229ed9;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
+}
+
+
+.telegram-button:hover {
+    opacity: 0.9;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.telegram-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.telegram-message {
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.result-actions {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.result-actions button {
+    border: none;
+
+    border-radius: 12px;
+
+    padding:
+        14px
+        18px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
+}
+
+
+.primary-button {
+    background: #1769aa;
+
+    color: #ffffff;
+}
+
+
+.secondary-button {
+    background: #edf2f7;
+
+    color: #24364d;
+}
+
+
+.result-actions button:hover {
+    opacity: 0.9;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.result-note {
+    margin-top: 22px;
+
+    padding: 16px;
+
+    background: #fff9e8;
+
+    border:
+        1px solid #f3e2ad;
+
+    border-radius: 13px;
+
+    color: #6d5a24;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.result-note strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.result-footer {
+    text-align: center;
+
+    padding:
+        25px
+        20px;
+
+    color: #7c899b;
+
+    font-size: 12px;
+}
+
+
+.footer-brand {
+    font-weight: 800;
+
+    color: #1769aa;
+
+    margin-bottom: 5px;
+}
+
+
+.result-footer p {
+    margin-top: 4px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .result-header {
+        padding:
+            15px
+            16px;
+    }
+
+
+    .header-label {
+        display: none;
+    }
+
+
+    .result-container {
+        margin:
+            20px auto;
+
+        padding:
+            0 12px;
+    }
+
+
+    .result-card {
+        padding: 22px 16px;
+
+        border-radius: 18px;
+    }
+
+
+    .result-card > h2 {
+        font-size: 23px;
+    }
+
+
+    .information-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .statistics {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+
+    .score-display strong {
+        font-size: 48px;
+    }
+
+
+    .pass-mark-card {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .result-actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .brand-text h1 {
+        font-size: 17px;
+    }
+
+
+    .brand-text span {
+        font-size: 9px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+}
