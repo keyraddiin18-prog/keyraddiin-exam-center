@@ -8,9 +8,6 @@ export default {
     passMark: 50,
 
     questions: [
-    ]
-};
-
 {
     id: 1,
     question: "Which characteristic of living organisms is most directly involved when an animal moves toward a food source after detecting its presence?",
@@ -1110,4 +1107,5 @@ export default {
         "Their bodies are typically divided into five parts."
     ],
     correctAnswer: 3
-},
+]
+};
